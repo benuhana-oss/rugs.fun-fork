@@ -1,6 +1,9 @@
-/** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true
+  reactStrictMode: true,
+  transpilePackages: [
+    "@solana/wallet-adapter-react",
+    "@solana/wallet-adapter-wallets"
+  ]
 }
 
 module.exports = nextConfig
